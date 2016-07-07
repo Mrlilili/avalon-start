@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="avalon.js"></script>
+    <script>
+        var vm = avalon.define({
+            $id: 'test',
+            percent: 0,
+            classes:'aaaa bbbb ccc'
+        })
+        var a = true;
+        setInterval(function () {
+            if (a) {
+                if (vm.percent < 100) {
+                    vm.percent++;
+                } else {
+                    a = false;
+                }
+            } else {
+                if (vm.percent > 0) {
+                    vm.percent--;
+                } else {
+                    a = true;
+                }
+            }
+        }, 100)
+    </script>
+</head>
+<body ms-controller="test">
+<div ms-class="@classes">
+    <div style="background: red;height: 50px;width:500px">
+        <div style="height: 100%;background: black;color: #fff" ms-css="{width:@percent+'%'}">{{@percent}}</div>
+    </div>
+</div>
+</body>
+</html>

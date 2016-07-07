@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="avalon.js"></script>
+    <script>
+        var vm = avalon.define({
+            $id: 'test',
+            a: 111,
+            b: 222
+        })
+
+    </script>
+</head>
+<body>
+<div ms-controller="test">
+    <p><input type="text" ms-duplex="@a"><strong ms-text="@a"></strong></p>
+    <p><input type="text" ms-duplex="@b"><span>{{@b}}</span><sapn ms-html="@b"></sapn></p>
+</div>
+</body>
+</html>

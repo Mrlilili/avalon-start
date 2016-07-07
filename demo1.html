@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="avalon.js"></script>
+
+    <script>
+        var vm = avalon.define({
+            $id: 'test',
+            a: 11,
+            b: 22
+        })
+        vm.$watch('a', function (newValue, oldValue) {
+            console.log(newValue, oldValue);
+        })
+        setTimeout(function () {
+            vm.a = 11000;
+        }, 3000)
+        console.log(vm.b)
+    </script>
+</head>
+<body>
+
+<div ms-controller="test">
+    {{@a}}
+    {{@b}}
+</div>
+
+</body>
+</html>

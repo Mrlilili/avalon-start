@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="avalon.js"></script>
+    <script>
+        var vm = avalon.define({
+            $id: 'test',
+            title: 111,
+            src: '222',
+            lang: 333
+        })
+    </script>
+</head>
+<body>
+<body ms-controller="test">
+    
+<div aaa="ddd" bbb="333" ms-attr="{title: @title,ddd:@src,lang:@lang}">
+    {{@src}}
+</div>
+<input ms-duplex="@src"/>
+</body>
+</body>
+</html>
