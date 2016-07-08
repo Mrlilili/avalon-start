@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="avalon.js"></script>
+    <script>
+        var vm = avalon.define({
+            $id: 'test',
+            object: {}
+        });
+        setTimeout(function () {
+            vm.object = {id: '123', msg: '显示!'}
+        }, 3000);
+        setTimeout(function () {
+            vm.object = {}
+        }, 5000);
+    </script>
+</head>
+<body>
+<div ms-controller="test">
+    <div ms-visible="@object.id!=null">
+        <span>{{@object.msg}}</span>
+    </div>
+
+    <div ms-if="@object.id!=null">
+        <span>{{@object.msg}}</span>
+    </div>
+</div>
+</body>
+</html>

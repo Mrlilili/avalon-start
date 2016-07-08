@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="avalon.js"></script>
+    <script>
+        var vm = avalon.define({
+            $id: 'test',
+            data: ['111', '222', '333', '444', '555', '666', '777'],
+        });
+
+    </script>
+</head>
+<body>
+<div ms-controller="test">
+    <div ms-for="(index,el) in @data|orderBy(el,1)">{{el}}-{{index}}</div>
+</div>
+</body>
+</html>

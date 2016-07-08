@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="avalon.js"></script>
+    <script>
+        var vm = avalon.define({
+            $id: 'test',
+            curIndex: 0,
+            buttons: ['a', 'b', 'c'],
+            panels: ['<div>this is a panel</div>', '<div>this is b panel</div>', '<div>this is c panel</div>']
+        });
+    </script>
+</head>
+<body>
+<div ms-controller="test">
+    <button ms-for="(i,el) in @buttons" ms-click="@curIndex = i">{{el}}</button>
+
+    <div ms-html="@panels[@curIndex]"></div>
+</div>
+</body>
+</html>
