@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7a3552e-b451-47c0-9c73-fdc815cb6107" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo9.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ms-if/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/avalon.js" afterPath="$PROJECT_DIR$/avalon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo9.html" afterPath="$PROJECT_DIR$/demo9.html" />
     </list>
     <ignored path="avalon-start.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,9 +92,11 @@
       <file leaf-file-name="demo9.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo9.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74418604">
-              <caret line="35" column="92" selection-start-line="35" selection-start-column="92" selection-end-line="35" selection-end-column="92" />
-              <folding />
+            <state vertical-scroll-proportion="0.53488374">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -465,9 +456,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo9.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74418604">
-          <caret line="35" column="92" selection-start-line="35" selection-start-column="92" selection-end-line="35" selection-end-column="92" />
-          <folding />
+        <state vertical-scroll-proportion="0.53488374">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
