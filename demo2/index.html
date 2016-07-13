@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .ani {
+            width: 100px;
+            height: 100px;
+            background: #29b6f6;
+        }
+    </style>
 </head>
 <body>
 <div ms-controller="test">
     <div ms-text="@a"></div>
-    <div ms-html="@font"></div>
+    <div ms-skip>
+        <div ms-html="@font"></div>
+    </div>
+
+</div>
+
+
+<div ms-controller='effect'>
+    <div class='ani' ms-effect="{is:'animate', action:@action,onEnterDone: @enterCb,onLeaveDone: @leaveCb}">
+        {{@aaa}}
+    </div>
+    <button ms-click='@action = @action !== "leave" ? "leave": "enter"'
+            type="button">click
+    </button>
 </div>
 <script src="dist/bundle.js"></script>
 
+
+<!--<script src="../lib/avalon/avalon2.0.1.js"></script>-->
+<!--<script src="../lib/mmrequest/mmRequest.js"></script>-->
+<!--<script>-->
+<!--avalon.ajax({-->
+<!--url: 'http://op.juhe.cn/onebox/weather/query',-->
+<!--type: 'get',-->
+<!--dataType:'jsonp',-->
+<!--success: function (e) {-->
+<!--console.log(e);-->
+<!--}-->
+<!--})-->
+
+<!--</script>-->
 </body>
 </html>
